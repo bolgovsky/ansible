@@ -1,0 +1,69 @@
+   88  ansible-playbook -i inventory/test.yml site.yml
+   89  docker images
+   90  docker run --name centos7 -d pycontribs/centos7 sleep 99999999999999999
+   91  docker run --name centos7 -d pycontribs/centos:7 sleep 99999999999999999
+   92  docker ps
+   93  docker run --name ubuntu -d pycontribs/ubuntu sleep 99999999999999999
+   94  docker ps
+   95  ды
+   96  ls
+   97  cd inventory
+   98  ls
+   99  cat prod.yml
+  100  cd ..
+  101  ansible-playbook -i inventory/prod.yml site.yml
+  102  ls
+  103  cd group_vars/
+  104  ls
+  105  nano deb
+  106  cat deb/
+  107  cd deb
+  108  cat d
+  109  ls
+  110  cat examp.yml
+  111  nano examp.yml
+  112  cd ..
+  113  cd el
+  114  nano examp.yml
+  115  cd ../..
+  116  ls
+  117  ansible-playbook -i inventory/prod.yml site.yml
+  118  ansible-vault encrypt group_vars/deb/examp.yml
+  119  ansible-vault encrypt group_vars/el/examp.yml
+  120  cd group_vars/
+  121  cd ..
+  122  cat group_vars/deb/examp.yml
+  123  cat group_vars/el/examp.yml
+  124  ansible-playbook -i inventory/prod.yml site.yml
+  125  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+  126  ansible-doc -t connections
+  127  ansible-doc -t connection
+  128  man ansible
+  129  ansible-doc -t connection -l
+  130  ansible-doc -t connection local
+  131  ls
+  132  cd inventory/
+  133  ls
+  134  nano prod.yml
+  135  cd ..
+  136  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+  137  cd inventory/
+  138  nano prod.yml
+  139  ansible-doc -t connection docker
+  140  ansible-doc -t connection local
+  141  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+  142  cd ..
+  143  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+  144  cd inventory/p
+  145  cd inventory/
+  146  nano prod.yml
+  147  cd ..
+  148  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+  149  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-passhis
+  150  history | grep encrypt
+  151  ansible-vault decrypt group_vars/deb/examp.yml
+  152  ansible-vault view  group_vars/el/examp.yml
+  153  ansible-doc -t connection -l
+  154  ansible-doc -t connection winrm
+  155  ansible-doc -t connection -l
+  156  ansible-doc -t connection ssh
